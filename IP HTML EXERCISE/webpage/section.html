@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <!start of head part>
+  <head>
+      <title>Room resrvation and Pizza-delivery</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+ 
+  <body topmargin="8%"  bottommargin="8%" leftmargin="device-width" rightmargin="20%"  alink="red" link="blue" vlink="black">
+       
+  <a href="homepage.html" none><p>Home Page</p></a>
+  <table>
+		   <tr>
+		      <td>
+			        <h1>Reservation Request</h1>
+                 <h4><a href="#pizza.html" target="_parent">Go to Pizza Delivery Page</a></h4>
+ <form>
+	<fieldset>
+	         <legend>General Information</legend>
+		    <table border="0" cellpadding="16" cellspacing="0"  >
+	          <tr>
+		        <td>
+			       <p><label for="arrival">Arrival Date:</label></p>
+			       <p><label for="nights">Nights:</label></p>
+			       <p><label for="adults">Adults:</label></p>
+			       <p><label for="children">Children:</label></p>
+			   </td>
+			   <td valign="top">
+			        <p><input id="arrival" name="arrival" type="date" placeholder="12/39/2016" pattern="mm/dd/yy" validate>
+					<p><input id="nights" name="nights" type="number" placeholder="3" >
+					<p><select id="adults" name="adults" > 
+					   <option value="1" selected>1</option>
+					   <option value="2">2</option>
+					   <option value="3">3</option>
+					   <option value="4">4</option>
+					   <option value="5">5</option>
+					</select></p>
+					<p><select id="children" name="children"> 
+					   <option value="0" selected>0</option>
+					   <option value="1">1</option>
+					   <option value="2">2</option>
+					   <option value="3">3</option>
+					   <option value="4">4</option>
+					</select></p>
+			   </td>
+			  
+            </tr>
+           </table>			  
+	</fieldset>
+	<fieldset>
+	    <legend>Preferences</legend>
+		  <table  border="0"  cellpadding="4" cellspacing="0" >
+		     <tr>
+			     <td> 
+				    <p><label for="room">Room Type:</label></p>
+			        <p><label for="bed">Bed Type:</label></p>
+					<p><input type="checkbox" id="smoke" name="smoke" ><label for="smoke">Smoking</label></p>
+				 </td> 
+                 <td valign="top">
+				   <p> <input type="radio" id="room" name="room" checked>
+					<label for="standard" >Standard</label>
+					<input type="radio" id="room" name="room" >
+					<label for="business">Business</label>
+					<input type="radio" id="room" name="room" >
+					<label for="suite">Suite</label>
+					</p>
+					<p>
+					<input type="radio" id="bed" name="bed" checked>
+					<label for="king">King</label>
+					<input type="radio" id="bed" name="bed" >
+					<label for="double">Double Double</label></p>
+                 </td>				 
+			 </tr>
+		  </table>
+	</fieldset>
+	<fieldset>
+	      <legend>Contact Information</legend>
+		    <table  border="0"  cellpadding="6" cellspacing="0">
+			     <tr>
+				     <td>
+					    <p><label for="fullname">Name:</label></p>
+			            <p><label for="email">Email:</label></p>
+					    <p><label for="phone">Phone</label></p>
+					 </td>
+					 <td valign="top">
+					     <p><input type="text" id="fullname" name="fullname" required></p>
+						 <p><input type="email" id="email" name="email" placeholder="grac@yahoo.com" pattern="grac@yahoo.com" validate></p>
+						 <p><input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="123-456-789" validate></p>
+					 </td>
+				 </tr>
+			</table>
+	</fieldset>
+	<p><button type="submit">Submit Reservation</button>
+	<button type="reset" >Clear</button></p>
+</form>
+				
+			 
+	<form>
+		<table  border="0" cellpadding="6" cellspacing="0" >
+		<tr>
+		   <td colspan="3"> 
+		       <center>
+		        <a name="pizza.html"> <h1>Pizza Delivery</h1></a>
+		         <h2>Online Order Form</h2>
+		      </center>
+		   </td>
+		</tr>
+        <tr>
+		    <td>
+			
+		      <ul>
+		        <li><label for="name">Name:</label></li>
+				
+		        <li><label for="address">Address:</label></li>
+				
+		        <li><label for="city">Town city:</label></li>
+				
+		        <li><label for="postcode">Postcode:</label></li>
+	
+		     </ul>
+		   </td>
+		   <td valign="top">
+		           <input type="text" id="name" name="name"><br>
+				   <input type="text" id="address" name="address"><br>
+				   <input type="text" id="city" name="city"><br>
+				   <input type="number" id="postcode" name="postcode"><br>
+			  
+			</td>
+			<td valign="top">
+			    <li><label for="telephone">Tel:</label></li>
+				<li><label for="email">Email:</label></li>
+			</td>
+			<td valign="top">
+			     <input type="tel" id="telephone" name="telephone"><br>
+				  <input type="email" id="email" name="email">
+			</td>
+		 </tr>
+		<tr>
+		    <td colspan="4"> <ul><li>required fields</li></ul></td>
+		</tr>
+        <tr>		
+		  <td>
+		<fieldset>
+		    <legend><label for="topping">Topping</label></legend>
+			          
+			     <p><input type="radio" id="topping" name="topping"><label for="margherita">Margherita</label></p>
+				 <p><input type="radio" id="topping" name="topping"><label for="seanons">Seanons</label></p>
+				 <p><input type="radio" id="topping" name="topping"><label for="meat">Meat Feast</label></p>
+			 
+		</fieldset>
+		    </td>
+			<td>
+		<fieldset>
+		    <legend>Size</legend>
+			            <label for="size"></label>
+			     <p><input type="radio" id="size" name="size"><label for="small">Small</label></p>
+				 <p><input type="radio" id="size" name="size"><label for="medium">Medium</label></p>
+				 <p><input type="radio" id="size" name="size"><label for="large">Large </label></p>
+			 
+		</fieldset>
+		     </td>
+			 <td>
+		<fieldset>
+		    <legend>Extras</legend>
+			 
+			     <p><input type="checkbox" id="mushroom" name="mushroom"><label for="mushroom">Mushroom</label></p>
+				 <p><input type="checkbox" id="greenPeppers" name="greenPeppers"><label for="greenPeppers">Green Peppers</label></p>
+				 <p><input type="checkbox" id="anchovies" name="anchovies"><label for="anchovies">Anchovies </label></p>
+				 <p><input type="checkbox" id="cheese" name="cheese"><label for="cheese">Extra Cheese </label></p>
+			 
+		</fieldset>
+		     </td>
+			 <td ></td>
+		</tr>
+		<tr>
+		    <td colspan="2">
+			    <p><label for="delivery">Preferred delivery time</label></p>
+				  <p><label for="instruction">Delivery instruction:<br> Or address</label></p>
+				  
+			</td>
+			<td valign="top" colspan="2">
+			     <p><input type="time" id="delivery" name="delivery"></p>
+				 <p><textarea type="text" id="instruction" name="instruction"  rows="4" cols="50"></textarea></p>
+				
+			</td>
+		</tr>
+		<tr>
+		   <td colspan="4" align="center"> <p><input type="submit" value="submit order"></p></td>
+		</tr>
+		
+		</table>
+		</form>
+			  </td>
+		   </tr>
+		 </table>
+		 
+
+	</body>	
+</html>		
